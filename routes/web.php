@@ -17,5 +17,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return "Hello Word";
 });
-Route::get('/hello', [HelloController::class, 'index']);
+Route::get('/home', [HomeController::class, 'index']);
+Route::get('/home/artikel', [HomeController::class, 'artikel']);
+Route::get('/home/kontak', [HomeController::class, 'kontak']);
 
